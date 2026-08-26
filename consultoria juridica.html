@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AR-MEX Despacho Jurídico | Consultoría Jurídica Internacional en Latinoamérica, EE. UU. y Europa</title>
+<meta name="description" content="AR-MEX Despacho Jurídico: consultoría jurídica internacional con red de abogados aliados en más de 10 países. Derecho Civil, Familiar, Mercantil, Migratorio, Penal y Laboral. Corresponsalía Argentina-México. Consulta confidencial por WhatsApp.">
+<meta name="keywords" content="AR-MEX despacho jurídico, consultoría jurídica internacional, corresponsalía Argentina México, abogados aliados, derecho migratorio, poderes especiales apostillados, derecho civil familiar mercantil penal laboral, Esteban Gabriel Cordary">
+<meta name="author" content="AR-MEX Despacho Jurídico — Lic. Esteban Gabriel Cordary">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="AR-MEX Despacho Jurídico | Consultoría Jurídica Internacional">
+<meta property="og:description" content="Red de abogados aliados en más de 10 países. Corresponsalía Argentina-México. Justicia para todos, sin fronteras.">
+<meta property="og:image" content="assets/img/og-cover.jpg">
+<meta property="og:locale" content="es_MX">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     LOADING SCREEN
+     ============================================================ -->
+<div id="loading-screen">
+  <div class="loader-glow" aria-hidden="true"></div>
+  <div class="loader-emblem">
+    <img src="assets/img/logo-mark.png" alt="Cargando AR-MEX Despacho Jurídico">
+  </div>
+  <span class="loader-text">AR-MEX Despacho Jurídico</span>
+  <div class="loader-bar"></div>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#inicio" class="brand">
+      <img src="assets/img/logo-mark.png" alt="Escudo AR-MEX Despacho Jurídico, balanza dorada">
+      <span class="brand-text">
+        <strong>AR-MEX</strong>
+        <span>Despacho Jurídico · Internacional</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#cobertura">Cobertura internacional</a></li>
+        <li><a href="#servicios">Áreas de práctica</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#nosotros">Nuestro despacho</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20una%20consulta%20jur%C3%ADdica%20confidencial." target="_blank" rel="noopener" class="btn btn-outline-light btn-sm">Consulta confidencial</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile full-screen nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#cobertura">Cobertura internacional</a>
+  <a href="#servicios">Áreas de práctica</a>
+  <a href="#galeria">Galería</a>
+  <a href="#nosotros">Nuestro despacho</a>
+  <a href="#contacto">Contacto</a>
+  <a href="https://wa.me/525544836842" target="_blank" rel="noopener" class="btn btn-gold"><span>Escribir por WhatsApp</span></a>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="inicio">
+  <canvas id="heroParticles" aria-hidden="true"></canvas>
+  <img src="assets/img/logo-mark.png" alt="" class="hero-emblem-float" aria-hidden="true">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="eyebrow on-dark">AR-MEX Despacho Jurídico · Consultoría Internacional</span>
+      <h1>Tu defensa legal, <em>sin fronteras.</em></h1>
+      <p class="hero-typeline">Presencia y enlace jurídico en <span id="typeTarget"></span></p>
+      <p class="lead">Gestionamos y damos seguimiento a tu caso en materia Civil, Familiar, Mercantil, Migratoria, Penal y Laboral, a través de una red de abogados aliados locales en más de 10 países. Corresponsalía Argentina-México. Justicia para todos, sin importar la distancia.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20una%20consulta%20jur%C3%ADdica%20confidencial." target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.86 14.24c-.25.7-1.45 1.35-2 1.44-.53.08-1.13.11-3.36-.7-2.82-1.05-4.65-3.9-4.79-4.08-.14-.18-1.14-1.52-1.14-2.9 0-1.38.72-2.05.98-2.33.26-.28.56-.35.75-.35h.53c.17 0 .4-.06.62.48.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.13 1.02 2.08 1.34 2.37 1.49.29.15.46.13.63-.08.17-.2.72-.85.92-1.14.2-.29.4-.24.65-.14.26.1 1.65.78 1.94.93.28.14.47.21.53.33.07.13.07.72-.18 1.4Z"/></svg>
+          Solicitar Consulta Confidencial
+        </a>
+        <a href="#cobertura" class="btn btn-outline-light">Ver cobertura internacional</a>
+      </div>
+
+      <div class="hero-badges">
+        <div class="hero-badge"><span class="num"><span data-count="10" data-suffix="+">0</span></span><span>Países con abogados aliados</span></div>
+        <div class="hero-badge"><span class="num"><span data-count="6">0</span></span><span>Áreas del derecho cubiertas</span></div>
+        <div class="hero-badge"><span class="num">AR·MX</span><span>Corresponsalía Argentina-México</span></div>
+        <div class="hero-badge"><span class="num">100%</span><span>Consulta confidencial</span></div>
+      </div>
+    </div>
+
+    <div data-reveal data-reveal-delay="2">
+      <div class="hero-card">
+        <span class="quote-mark">&ldquo;</span>
+        <p>Justicia para todos, en cualquier país donde te encuentres.</p>
+        <div class="who">
+          <span class="mono">EC</span>
+          <div>
+            <strong>Lic. Esteban Gabriel Cordary</strong>
+            <span>Abogado · Céd. Prof. 15273259</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>Descubre más</span><span class="line"></span></div>
+</section>
+
+<!-- ============================================================
+     TRUST BAR
+     ============================================================ -->
+<div class="trust-bar">
+  <div class="container trust-grid">
+    <div class="trust-item" data-reveal><div class="n"><span data-count="10" data-suffix="+">0</span></div><p>Países con red de abogados aliados</p></div>
+    <div class="trust-item" data-reveal data-reveal-delay="1"><div class="n"><span data-count="6">0</span></div><p>Áreas del derecho atendidas</p></div>
+    <div class="trust-item" data-reveal data-reveal-delay="2"><div class="n">100%</div><p>Atención personal y confidencial</p></div>
+    <div class="trust-item" data-reveal data-reveal-delay="3"><div class="n">24/7</div><p>Contacto para casos urgentes</p></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     COBERTURA INTERNACIONAL
+     ============================================================ -->
+<section class="section on-navy" id="cobertura">
+  <canvas class="section-particles" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow on-dark">Red internacional</span>
+      <h2>Presencia y enlace jurídico en más de 10 países</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>A través de nuestra corresponsalía Argentina-México y una red de abogados aliados matriculados localmente, gestionamos y damos enlace a tu caso ante juzgados y tribunales de Latinoamérica, Estados Unidos, Canadá y Europa. Tramitamos Poderes Especiales Apostillados para representación a distancia.</p>
+    </div>
+
+    <div class="coverage-grid" data-reveal data-reveal-delay="1">
+      <span class="coverage-flag">🇲🇽 México</span>
+      <span class="coverage-flag">🇦🇷 Argentina</span>
+      <span class="coverage-flag">🇧🇷 Brasil</span>
+      <span class="coverage-flag">🇨🇴 Colombia</span>
+      <span class="coverage-flag">🇨🇱 Chile</span>
+      <span class="coverage-flag">🇵🇪 Perú</span>
+      <span class="coverage-flag">🇵🇦 Panamá</span>
+      <span class="coverage-flag">🇪🇨 Ecuador</span>
+      <span class="coverage-flag">🇨🇷 Costa Rica</span>
+      <span class="coverage-flag">🇺🇾 Uruguay</span>
+      <span class="coverage-flag">🇬🇹 Guatemala</span>
+      <span class="coverage-flag">🇩🇴 Rep. Dominicana</span>
+      <span class="coverage-flag">🇻🇪 Venezuela</span>
+      <span class="coverage-flag">🇺🇸 Estados Unidos</span>
+      <span class="coverage-flag">🇨🇦 Canadá</span>
+      <span class="coverage-flag">🇪🇸 España</span>
+    </div>
+
+    <div class="coverage-callout" data-reveal data-reveal-delay="2">
+      <p>Atención en Latinoamérica, Estados Unidos, Canadá <strong>y Europa</strong> · Corresponsalía Argentina-México · Soluciones legales transfronterizas</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONOCE TUS DERECHOS (área penal)
+     ============================================================ -->
+<section class="section" id="derechos">
+  <div class="container rights-wrap">
+    <div class="rights-intro" data-reveal>
+      <span class="eyebrow">Derecho Penal</span>
+      <h2>¿Te detuvieron o detuvieron a un familiar? Actúa en los primeros minutos.</h2>
+      <p>En un procedimiento penal, cada minuto cuenta. Conocer y ejercer tus derechos desde el primer momento puede ser la diferencia entre una defensa sólida y una situación irreversible. Esto es lo primero que debes hacer, en México o en cualquier país donde te enlacemos con un abogado aliado.</p>
+      <div class="rights-callout">"Cada minuto puede cambiar completamente el caso."</div>
+      <div style="margin-top:32px; display:flex; gap:16px; flex-wrap:wrap;">
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20orientaci%C3%B3n%20legal%20urgente." target="_blank" rel="noopener" class="btn btn-whatsapp">Contacto inmediato: 55 4483 6842</a>
+      </div>
+    </div>
+
+    <div class="steps-list">
+      <div class="step-row" data-reveal>
+        <span class="step-num">01</span>
+        <div><h4>Mantén la calma</h4><p>Respira, no te alteres y no opongas resistencia. Todo lo que hagas puede afectar tu situación legal.</p></div>
+      </div>
+      <div class="step-row" data-reveal data-reveal-delay="1">
+        <span class="step-num">02</span>
+        <div><h4>No declares nada</h4><p>Tienes derecho a guardar silencio. No estás obligado a responder preguntas sin tu abogado presente.</p></div>
+      </div>
+      <div class="step-row" data-reveal data-reveal-delay="2">
+        <span class="step-num">03</span>
+        <div><h4>Pide hablar con tu abogado</h4><p>Tienes derecho a una defensa legal. Solicita hablar con tu abogado de confianza de inmediato.</p></div>
+      </div>
+      <div class="step-row" data-reveal data-reveal-delay="3">
+        <span class="step-num">04</span>
+        <div><h4>No firmes nada sin leer</h4><p>No firmes documentos ni declaraciones que no hayas leído o entendido por completo.</p></div>
+      </div>
+      <div class="step-row" data-reveal data-reveal-delay="4">
+        <span class="step-num">05</span>
+        <div><h4>Informa a un familiar</h4><p>Tienes derecho a que se informe a un familiar o persona de tu confianza sobre tu detención.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICIOS
+     ============================================================ -->
+<section class="section on-navy" id="servicios">
+  <canvas class="section-particles" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow on-dark">Áreas de práctica</span>
+      <h2>Asesoría legal integral, con alcance internacional</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>Seis áreas de práctica y una misma red de abogados aliados. Da clic en el área que corresponde a tu caso y agenda tu consulta confidencial.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" data-reveal>
+        <span class="tag">01</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8v2h18V8L12 3ZM5 10v9M9 10v9M15 10v9M19 10v9M3 21h18"/></svg></div>
+        <h3>Derecho Civil</h3>
+        <p>Contratos, responsabilidad civil, sucesiones y controversias civiles, con enlace a abogados aliados en el país donde se litigue el caso.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Civil." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="service-card" data-reveal data-reveal-delay="1">
+        <span class="tag">02</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM3 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></div>
+        <h3>Derecho Familiar</h3>
+        <p>Divorcios, pensión alimenticia, custodia de menores, régimen de visitas y patria potestad, incluso entre países distintos.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Familiar." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="service-card" data-reveal data-reveal-delay="2">
+        <span class="tag">03</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18M3 21h18M7 15l4-4 3 3 5-6"/></svg></div>
+        <h3>Derecho Mercantil</h3>
+        <p>Constitución de empresas, contratos mercantiles, cobranza y litigios comerciales para proteger tu operación y tu patrimonio.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Mercantil." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="service-card" data-reveal data-reveal-delay="3">
+        <span class="tag">04</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 12l5-6M3 12l5 6M21 12l-5-6M21 12l-5 6"/></svg></div>
+        <h3>Derecho Migratorio</h3>
+        <p>Trámites migratorios, regularización, visas y gestión de Poderes Especiales Apostillados para trámites en el extranjero.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Migratorio." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="service-card" data-reveal data-reveal-delay="4">
+        <span class="tag">05</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M7 7l-4 8a4 4 0 0 0 8 0l-4-8Zm10 0l-4 8a4 4 0 0 0 8 0l-4-8Z"/></svg></div>
+        <h3>Derecho Penal</h3>
+        <p>Defensa en procedimientos penales, audiencias, medidas cautelares y recursos. Estrategia firme para proteger tu libertad.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Penal." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="service-card" data-reveal data-reveal-delay="5">
+        <span class="tag">06</span>
+        <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4V7Zm4 0V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16"/></svg></div>
+        <h3>Derecho Laboral</h3>
+        <p>Despidos injustificados, prestaciones, Seguridad Social ante el IMSS y Recursos Humanos para empresas.</p>
+        <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20en%20Derecho%20Laboral." target="_blank" rel="noopener" class="learn">Solicitar asesoría <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="services-extra" data-reveal data-reveal-delay="1">
+      <span class="services-extra-label">También te asesoramos en:</span>
+      <div class="services-extra-tags">
+        <span>Propiedad Intelectual</span>
+        <span>Derecho de Autor</span>
+        <span>Contratos</span>
+        <span>Regularización de Inmuebles</span>
+        <span>Seguridad Social e IMSS</span>
+        <span>Recursos Humanos para Empresas</span>
+        <span>Poderes Especiales Apostillados</span>
+        <span>Derecho Infantil</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALERÍA
+     ============================================================ -->
+<section class="section gallery-section" id="galeria">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow on-dark">Galería</span>
+      <h2>Presencia y gestión ante instituciones clave</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>Evidencia de nuestra actividad y representación ante autoridades e instituciones en distintos trámites y materias.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <figure data-reveal>
+        <img src="assets/img/gallery-poder-judicial.jpg" alt="Lic. Esteban Gabriel Cordary en el Poder Judicial de la Ciudad de México">
+        <figcaption>Representación ante el Poder Judicial de la Ciudad de México</figcaption>
+      </figure>
+      <figure data-reveal data-reveal-delay="1">
+        <img src="assets/img/gallery-impi.jpg" alt="Gestión ante el IMPI, Instituto Mexicano de la Propiedad Industrial">
+        <figcaption>Gestión ante el IMPI — Instituto Mexicano de la Propiedad Industrial</figcaption>
+      </figure>
+      <figure data-reveal data-reveal-delay="2">
+        <img src="assets/img/gallery-inda.jpg" alt="Trámite ante el INDA, Instituto Nacional del Derecho de Autor">
+        <figcaption>Trámites ante el INDA — Instituto Nacional del Derecho de Autor</figcaption>
+      </figure>
+      <figure data-reveal data-reveal-delay="3">
+        <img src="assets/img/gallery-imss.jpg" alt="Asesoría en Seguridad Social ante el IMSS">
+        <figcaption>Asesoría en Seguridad Social ante el IMSS</figcaption>
+      </figure>
+      <figure data-reveal data-reveal-delay="4">
+        <img src="assets/img/attorney-media.jpg" alt="Corresponsalía y enlace jurídico internacional AR-MEX">
+        <figcaption>Corresponsalía y enlace jurídico internacional</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NOSOTROS / ABOGADOS
+     ============================================================ -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Nuestro despacho</span>
+      <h2>Un especialista, seis áreas de práctica, una red internacional</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>AR-MEX es un despacho de consultoría jurídica internacional que enlaza tu caso con abogados aliados matriculados localmente, para ofrecerte representación legal completa dentro y fuera de México.</p>
+    </div>
+
+    <div class="attorneys-grid">
+      <article class="attorney-card" data-reveal>
+        <div class="attorney-media" role="img" aria-label="Lic. Esteban Gabriel Cordary en enlace jurídico internacional">
+          <div class="media-frame"><div class="media-bg"></div></div>
+          <div class="attorney-monogram">EC</div>
+        </div>
+        <div class="attorney-body">
+          <h3>Lic. Esteban Gabriel Cordary</h3>
+          <span class="attorney-role">Abogado · Cédula Profesional 15273259</span>
+          <span class="attorney-meta">Corresponsalía Argentina-México · Red de abogados aliados en más de 10 países</span>
+          <p class="attorney-quote">"Justicia para todos, sin importar fronteras."</p>
+          <div class="attorney-tags">
+            <span>Corresponsalía Argentina-México</span>
+            <span>Poderes Apostillados</span>
+            <span>Derecho Internacional</span>
+            <span>Atención Latam · EE. UU. · Europa</span>
+          </div>
+          <div class="attorney-contact">
+            <a href="https://wa.me/525544836842" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp 55 4483 6842</a>
+            <a href="mailto:armex2026@gmail.com" class="btn btn-outline-light btn-sm">Enviar correo</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESO / CÓMO TRABAJAMOS
+     ============================================================ -->
+<section class="section alt-bg" id="proceso">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Metodología</span>
+      <h2>Así te acompañamos, sin importar el país</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>Un proceso claro y ordenado para que sepas exactamente qué esperar en cada etapa de tu caso, aquí o en cualquier país de nuestra red.</p>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-item" data-reveal>
+        <span class="pnum">PASO 01</span>
+        <h3>Asesorar</h3>
+        <p>Brindamos orientación legal clara y personalizada para ayudarte a tomar las mejores decisiones desde el primer contacto.</p>
+      </div>
+      <div class="process-item" data-reveal data-reveal-delay="1">
+        <span class="pnum">PASO 02</span>
+        <h3>Evaluar y ubicar jurisdicción</h3>
+        <p>Estudiamos tu caso a fondo para identificar tus derechos, opciones y el país o jurisdicción aplicable.</p>
+      </div>
+      <div class="process-item" data-reveal data-reveal-delay="2">
+        <span class="pnum">PASO 03</span>
+        <h3>Vincular con abogado aliado</h3>
+        <p>Te enlazamos con el abogado local matriculado de nuestra red en el país donde se gestione tu caso.</p>
+      </div>
+      <div class="process-item" data-reveal data-reveal-delay="3">
+        <span class="pnum">PASO 04</span>
+        <h3>Tramitar poderes apostillados</h3>
+        <p>Gestionamos Poderes Especiales Apostillados para que puedas ser representado a distancia con validez legal.</p>
+      </div>
+      <div class="process-item" data-reveal data-reveal-delay="4">
+        <span class="pnum">PASO 05</span>
+        <h3>Representar y litigar</h3>
+        <p>Defendemos tus derechos ante autoridades y tribunales con argumentación sólida y determinación.</p>
+      </div>
+      <div class="process-item" data-reveal data-reveal-delay="5">
+        <span class="pnum">PASO 06</span>
+        <h3>Dar seguimiento internacional</h3>
+        <p>Damos seguimiento continuo a tu caso hasta su resolución, coordinando entre países cuando es necesario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+     ============================================================ -->
+<section class="section" id="contacto">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow">Contacto</span>
+      <h2>Agenda tu consulta confidencial hoy mismo</h2>
+      <div class="divider-orn" aria-hidden="true"></div>
+      <p>Escríbenos por WhatsApp, correo electrónico o completa el formulario. Te responderemos a la brevedad para orientarte sobre tu caso, sin importar el país.</p>
+    </div>
+
+    <div class="contact-wrap">
+      <div class="contact-cards" data-reveal>
+        <div class="contact-card">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M5 7h14M7 7l-4 8a4 4 0 0 0 8 0l-4-8Zm10 0l-4 8a4 4 0 0 0 8 0l-4-8Z"/></svg></div>
+          <div>
+            <span class="role">Civil, Familiar, Mercantil, Migratorio, Penal y Laboral</span>
+            <h4>Lic. Esteban Gabriel Cordary</h4>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5Z"/></svg> 55 4483 6842 · 55 4930 5178</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4Zm0 2 8 7 8-7"/></svg> armex2026@gmail.com</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg> Corresponsalía Argentina-México · Red de abogados aliados en más de 10 países</li>
+            </ul>
+            <div class="mini-actions">
+              <a href="https://wa.me/525544836842" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+              <a href="mailto:armex2026@gmail.com" class="btn btn-outline-dark btn-sm">Enviar correo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form" data-reveal data-reveal-delay="2">
+        <h3>Cuéntanos tu caso</h3>
+        <p>Toda la información que compartas es tratada con absoluta confidencialidad.</p>
+        <form id="contactForm">
+          <div class="form-grid">
+            <div class="field">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="55 0000 0000" required>
+            </div>
+            <div class="field full">
+              <label for="pais">País donde se encuentra tu caso</label>
+              <input type="text" id="pais" name="pais" placeholder="México, Argentina, España...">
+            </div>
+            <div class="field full">
+              <label for="area">Área legal</label>
+              <select id="area" name="area" required>
+                <option value="" disabled selected>Selecciona el área de tu caso</option>
+                <option value="Derecho Civil">Derecho Civil</option>
+                <option value="Derecho Familiar">Derecho Familiar</option>
+                <option value="Derecho Mercantil">Derecho Mercantil</option>
+                <option value="Derecho Migratorio">Derecho Migratorio</option>
+                <option value="Derecho Penal">Derecho Penal</option>
+                <option value="Derecho Laboral">Derecho Laboral</option>
+                <option value="Propiedad Intelectual">Propiedad Intelectual</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="mensaje">Cuéntanos brevemente tu situación</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Describe tu caso (opcional)"></textarea>
+            </div>
+          </div>
+          <div class="form-foot">
+            <button type="submit" class="btn btn-gold btn-block"><span>Solicitar Consulta Confidencial</span></button>
+            <p class="form-note">Al enviar, se abrirá WhatsApp con tu mensaje listo para el especialista correspondiente.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">
+        <img src="assets/img/logo-mark.png" alt="AR-MEX Despacho Jurídico">
+        <span>
+          <strong>AR-MEX</strong>
+          <span>Despacho Jurídico · Internacional</span>
+        </span>
+      </div>
+      <p class="desc">Consultoría jurídica internacional con red de abogados aliados en más de 10 países. Derecho Civil, Familiar, Mercantil, Migratorio, Penal y Laboral. Justicia para todos, sin fronteras.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.1h-3.1V9c0-.9.25-1.5 1.53-1.5H17V4.7A21 21 0 0 0 14.7 4.6c-2.27 0-3.83 1.38-3.83 3.93v2.36H8v3.1h2.87V22h2.63Z"/></svg></a>
+        <a href="https://wa.me/525544836842" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Z"/></svg></a>
+        <a href="mailto:armex2026@gmail.com" aria-label="Correo" title="Correo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4V4Zm0 2 8 7 8-7"/></svg></a>
+        <a href="#" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Áreas</h5>
+      <ul>
+        <li><a href="#servicios">Derecho Civil</a></li>
+        <li><a href="#servicios">Derecho Familiar</a></li>
+        <li><a href="#servicios">Derecho Mercantil</a></li>
+        <li><a href="#servicios">Derecho Migratorio</a></li>
+        <li><a href="#servicios">Derecho Penal</a></li>
+        <li><a href="#servicios">Derecho Laboral</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Despacho</h5>
+      <ul>
+        <li><a href="#cobertura">Cobertura internacional</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#nosotros">Nuestro despacho</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contacto directo</h5>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2 1a11 11 0 0 0 6 6l1-2 5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5Z"/></svg> 55 4483 6842 · 55 4930 5178</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4V4Zm0 2 8 7 8-7"/></svg> armex2026@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>&copy; <span id="year"></span> AR-MEX Despacho Jurídico. Todos los derechos reservados.</span>
+    <span>Justicia para todos, sin fronteras.</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     FLOATING ACTIONS
+     ============================================================ -->
+<div class="wa-float">
+  <div class="wa-menu" id="waMenu">
+    <a href="https://wa.me/525544836842?text=Hola%2C%20necesito%20asesor%C3%ADa%20legal." target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Z"/></svg></span>
+      <span>Consulta Legal<br><small>Lic. Esteban Cordary</small></span>
+    </a>
+    <a href="https://wa.me/525544836842?text=Hola%2C%20tengo%20un%20caso%20en%20otro%20pa%C3%ADs%20y%20necesito%20orientaci%C3%B3n%20sobre%20su%20red%20de%20abogados%20aliados." target="_blank" rel="noopener">
+      <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Z"/></svg></span>
+      <span>Casos Internacionales<br><small>Corresponsalía Argentina-México</small></span>
+    </a>
+  </div>
+  <button class="wa-toggle" id="waToggle" aria-label="Contactar por WhatsApp" aria-expanded="false">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.46 9.96-9.96S17.54 2 12.04 2Zm5.86 14.24c-.25.7-1.45 1.35-2 1.44-.53.08-1.13.11-3.36-.7-2.82-1.05-4.65-3.9-4.79-4.08-.14-.18-1.14-1.52-1.14-2.9 0-1.38.72-2.05.98-2.33.26-.28.56-.35.75-.35h.53c.17 0 .4-.06.62.48.25.6.85 2.08.92 2.23.07.15.12.33.02.53-.1.2-.15.32-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.13 1.02 2.08 1.34 2.37 1.49.29.15.46.13.63-.08.17-.2.72-.85.92-1.14.2-.29.4-.24.65-.14.26.1 1.65.78 1.94.93.28.14.47.21.53.33.07.13.07.72-.18 1.4Z"/></svg>
+  </button>
+</div>
+
+<button class="to-top" id="toTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="js/script.js"></script>
+</body>
+</html>
