@@ -911,7 +911,7 @@ h1 em {
 .media-frame, .media-bg { position: absolute; inset: 0; }
 
 .media-bg {
-  background: url("../assets/img/attorney-media.jpg") center 18%/cover;
+  background: url("../assets/img/attorney-portrait.jpg") center 20%/cover;
   transform: scale(1.04);
   animation: slowPan 14s ease-in-out infinite alternate;
 }
